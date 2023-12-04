@@ -72,7 +72,7 @@ class control4AmpChannel(object):
     def volume(self,value):
         self._volume = value
         new_volume = int(float(self._volume) * 100) + 160
-        new_volume = hex(new_volume)[2:]
+        new_volume = hex(min(new_volume-4,99))[2:]
         send_udp_command("c4.amp.chvol 0" + str(self._channel) + " " + new_volume, self._host, self._port)
 
     @volume.deleter
