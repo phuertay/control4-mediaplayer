@@ -9,14 +9,19 @@ To install, simply copy the control4-mediaplayer folder into your CUSTOM_COMPONE
 # Example configuration.yaml entry
 media_player:  
   - platform: control4-mediaplayer
-    name: Great Room
-    host: "192.168.1.123"
-    channel: 1 
+    name: ducha
+    host: 192.168.1.84
+    channel: 1
+    on_volume: 50
     source_list:
-      - "Source 1 name"
-      - "Source 2 name"
-      - "Source 3 name"
-      - "Source 4 name"
+      - "Source 1"
+      - "Source 2"
+      - "Source 3"
+      - "Source 4"
+      - "Source 5"
+      - "Source 6"
+      - "Source 7"
+      - "Source 8"
 ````
 ### Available configuration parameters
 * **platform** (Required): Name of a platform
